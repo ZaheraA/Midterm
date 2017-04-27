@@ -98,6 +98,10 @@ public class ConnectDB {
     {
         try {
             connectToMySql();
+            ps = connect.prepareStatement("DROP TABLE IF EXISTS `"+tableName+"`;");
+            ps.executeUpdate();
+            ps = connect.prepareStatement("CREATE TABLE `"+tableName+"` (`ID` int(11) NOT NULL AUTO_INCREMENT,`SortingNumbers` bigint(20) DEFAULT NULL,  PRIMARY KEY (`ID`) );");
+            ps.executeUpdate();
             for(int n=0; n<ArrayData.length; n++){
                 ps = connect.prepareStatement("INSERT INTO "+tableName+" ( "+columnName+" ) VALUES(?)");
                 ps.setInt(1,ArrayData[n]);
@@ -247,7 +251,7 @@ public class ConnectDB {
 
     public static void main(String[] args)throws IOException, SQLException, ClassNotFoundException {
 
-    	/*
+    	
         insertProfileToMySql("profile","name", "id");
         List<User> list = readFromMySql();
         for(User user:list){
@@ -255,7 +259,7 @@ public class ConnectDB {
         }
         String message = insertToMongoDB(new User("Ishrat Mina", 3539));
         List<User> user = readFromMongoDB();
-        */
+        
 
     }
 
