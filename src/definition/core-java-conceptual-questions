@@ -2,32 +2,110 @@ Please answer the below core-java Questions:
 
 
 What jdk contains or composed of and define each components?
+Ans: JDK is composed of:-
+ 1. A Compiler (javac)- A compiler is a program that translates a source program written in some high-level
+ programming language into machine code.
+ 2. An Interpreter/loader- Java interpreter is used to interpret the .class Java files that have been compiled
+ by Java compiler (javac).
+ 3. A Documentation Generator (javadoc)- Java Documentation helps to maintain code.
+ 4. Java Disassembler- The javap command is the disassembly tool of JDK that disassembles one or more class files.
+ Its output depends on the options used.
+ 5. Java Debugger-The Java Debugger,(jdb)is a simple command-line debugger for Java classes. It is a demonstration of the
+ Java Platform Debugger Architecture that provides inspection and debugging of a local or remote Java Virtual Machine.
+ 6. Java Applet Viewer- This is used to view the Java applets. The applet viewer command connects to the documents
+ or resources designated by urls and displays each applet referenced by the documents in its own window.
 What is IDE?
+Ans: Integrated Development Environment.
 What are the IDEs available in the market to support java?
+Eclipse, NetBeans, IntelliJ
 Explain the entire java life cycle.
+Ans: Source codes are written using an IDE. Java compiler then compiles to .java file and a  .class file is then obtained.
+The class file is transferred to the JVM to be interpreted. 
+Ans: Source codes are written in an IDE
 what is class?
+Ans: A Class is a blueprint or template from which objects are made.
 What is object?
+Ans: An Object is an instance of a Class and has state and behavior.
 What is the entry point of an application?
+Ans: The entry point of an application is the Main Method.
 Why main is static?
+Ans: Main is Static in order for Java virtual Machine to call it without creating any instance of class which
+contains main method.
 What is the difference between an Interface and Abstract class?
+Ans: Interface is like a blueprint that contains only abstract methods and abstract class.
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+Ans: We cannot create Object from an Interface and Abstract class. They can only be implemented.
 what is Access Specifier?
+Ans: Access Specifier controls the level of access other parts of a program have to a code.
 What is OOP ? Define each feature of java OOP.
+Ans: Object Oriented Programming is a technique where objects are manipulated to achieve desired functionality.
+Features of OOP
+1. Inheritance-is the process by which one object acquires the properties and behavior of its parent object.
+2. Encapsulation- is data hiding and is a mechanism of wrapping the data.
+3. Polymorphism- is the ability of an Object to take on many forms.
+4. Abstraction-is used to hide certain details and only show the essential features of the object.
 What is API? Name list of API that you have used so far.
+Ans: Application Programming Interface
+List of API
+java.util.Iterator
+java.io.IOException
+java.util.Map
+java.util.ArrayList
+java.util.HashMap
+java.util.Arrays
 Does java support multiple inheritance?
+Java does not support multiple inheritance.
 What is method overloading and when it happens?
+Ans: Method Overloading is a feature that allows a class to have two or more methods having same name,if their
+argument lists are different.
+Method Overloading happens in compile time
 What is method overriding and when it happens?
+Declaring a method in subclass which is already present in parent class is known as method overriding.
+Method Overriding happens in run time
 Explain exceptions in java and how to handle it.
+Ans: An exception is a problem that arises during the execution of a program and when this happens the normal flow
+of the program is disrupted and the program terminates abnormally.
+Exception can be handled in using try and catch.
+A try and catch block is placed around the code that might generate an exception.
 What is static keyword in java? How it has been used in variables and methods ?
+Ans: The static keyword can be used to attach a variable or method to a Class.
+Static variable and Methods can be used without having any instance of the class.
+A static variable can be used to refer the common property of all objects
+A static method belongs to the class rather than object of a class and can access static data member and can
+change the value of it.
 What is final and how it has been used variables and methods?
+Ans: Final is a keyword in java and can be applied to member variables, methods, class and local variables.
+Any variable either member variable or local variable (declared inside method or block)
+modified by final keyword is called final variable.
+A java method with final keyword is called final method and it cannot be overridden in sub-class.
 What is final, finally and finalize?
+Ans:
+Final keyword is a reserved word in java and can be applied to member variables, , class and local variables .
+Once you make a reference final you are not allowed to change it.
+Finally is used to place important code, it will be executed whether exception is handled or not.
+Finalize is used to perform clean up processing just before object is garbage collected.
 What is a constructor ?
+Ans: A Constructor has the same name as the class name and is used to initialize the Object.
 What is "this" keyword in java ?
+Ans: The "this" keyword in java works as a reference to the current Object whose Method or Constructor is being invoked.
 What is "super" keyword in java?
+Ans: The "super" keyword can be used to invoke variable,constructor and method from it's super class.
 What is JVM stand for ?
+Ans: Java Virtual Machine
 What version of java are you using?
+Ans: Version 8
 What is JAR stand for ?
+Ans: Java Archive(JAR)
 What is compile time and run time?
+Ans:
+Compile time is where the source codes are being translated into machine code.
+Run time is where the JVM is started an interprets the bytecodes.
 What is heap?
+Ans: Heap is where Objects are stored.
 How java manage it's memory?
 What is the difference between String, StringBuffer and StringBuilder?
+String object is immutable which means that the value stored in the String object cannot be changed.
+StringBuffer and StringBuilder objects are mutable and we can make changes to the value stored in the object
+StringBuffer and StringBuilder have the same methods and the only difference is that of synchronization
+StringBuffer is synchronized which means it is thread safe.
+StringBuilder is not synchronized and means it isn’t thread safe.
